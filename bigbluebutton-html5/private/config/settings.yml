@@ -4,7 +4,7 @@ public:
     desktopFontSize: 14px
     audioChatNotification: false
     autoJoin: true
-    listenOnlyMode: true
+    listenOnlyMode: false
     forceListenOnly: false
     skipCheck: false
     clientTitle: BigBlueButton
@@ -89,12 +89,12 @@ public:
       - danger
       - warning
   externalVideoPlayer:
-    enabled: true
+    enabled: false
   networkMonitoring:
     enableNetworkMonitoring: false
     packetLostThreshold: 10
   kurento:
-    wsUrl: HOST
+    wsUrl: wss://video.metawinggroups.com/bbb-webrtc-sfu
     # Valid for video-provider. Time (ms) before its WS connection times out
     # and tries to reconnect.
     wsConnectionTimeout: 4000
@@ -183,7 +183,7 @@ public:
         name: High definition
         default: false
         bitrate: 800
-    enableScreensharing: true
+    enableScreensharing: false
     enableVideo: true
     enableVideoMenu: true
     enableListenOnly: true
@@ -230,10 +230,10 @@ public:
     toggleRecording: false
     toggleSelfVoice: false
   poll:
-    enabled: true
+    enabled: false
     max_custom: 5
   captions:
-    enabled: true
+    enabled: false
     enableDictation: false
     backgroundColor: "#000000"
     fontColor: "#FFFFFF"
@@ -243,7 +243,7 @@ public:
     lines: 2
     time: 5000
   chat:
-    enabled: true
+    enabled: false
     bufferChatInsertsMs: 0
     startClosed: false
     min_message_length: 1

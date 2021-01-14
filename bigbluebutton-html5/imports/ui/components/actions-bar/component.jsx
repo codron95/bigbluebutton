@@ -8,6 +8,7 @@ import AudioControlsContainer from '../audio/audio-controls/container';
 import JoinVideoOptionsContainer from '../video-provider/video-button/container';
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
+import EndCall from '../end-call/component';
 
 class ActionsBar extends PureComponent {
   render() {
@@ -44,7 +45,7 @@ class ActionsBar extends PureComponent {
 
     return (
       <div className={styles.actionsbar}>
-        <div className={styles.left}>
+        <div className={styles.leftHidden}>
           <ActionsDropdown {...{
             amIPresenter,
             amIModerator,
@@ -83,6 +84,9 @@ class ActionsBar extends PureComponent {
               <JoinVideoOptionsContainer />
             )
             : null}
+          <div>
+            <EndCall />
+          </div>
           <DesktopShare {...{
             handleShareScreen,
             handleUnshareScreen,

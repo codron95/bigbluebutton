@@ -87,7 +87,7 @@ class AudioControls extends PureComponent {
                 : intl.formatMessage(intlMessages.muteAudio)}
               aria-label={muted ? intl.formatMessage(intlMessages.unmuteAudio)
                 : intl.formatMessage(intlMessages.muteAudio)}
-              color={!muted ? 'primary' : 'default'}
+              color={!muted ? 'success' : 'default'}
               ghost={muted}
               icon={muted ? 'mute' : 'unmute'}
               size="lg"
@@ -95,7 +95,7 @@ class AudioControls extends PureComponent {
               accessKey={shortcuts.togglemute}
             />
           ) : null}
-        <Button
+        {/*<Button
           className={cx(styles.button, inAudio || styles.btn)}
           onClick={inAudio ? handleLeaveAudio : handleJoinAudio}
           disabled={disable}
@@ -110,7 +110,7 @@ class AudioControls extends PureComponent {
           size="lg"
           circle
           accessKey={inAudio ? shortcuts.leaveaudio : shortcuts.joinaudio}
-        />
+        />*/}
       </span>);
   }
 }

@@ -178,7 +178,7 @@
   padding: 0 !important;
   overflow: hidden;
   display: none !important;
-  
+
 }
 
 .icon {
@@ -186,7 +186,7 @@
   text-align: center;
 
   .buttonWrapper & {
-    font-size: 125%;
+    font-size: 600%;
   }
 
   & + .label {
@@ -298,10 +298,10 @@
 }
 
 .circle {
-  --btn-sm-padding-x: calc(var(--sm-padding-x) / 2);
-  --btn-md-padding-x: calc(var(--md-padding-x) / 2);
-  --btn-lg-padding-x: calc(var(--lg-padding-x) / 2);
-  --btn-jumbo-padding-x: calc(var(--jumbo-padding-x) / 2);
+  --btn-sm-padding-x: calc(var(--sm-padding-x)/2);
+  --btn-md-padding-x: calc(var(--md-padding-x)/2);
+  --btn-lg-padding-x: calc(var(--lg-padding-x)/2);
+  --btn-jumbo-padding-x: calc(var(--jumbo-padding-x)/2);
 
   border-radius: 50%;
 

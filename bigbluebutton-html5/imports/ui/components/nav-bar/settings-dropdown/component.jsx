@@ -225,38 +225,38 @@ class SettingsDropdown extends PureComponent {
 
     return _.compact([
       this.getFullscreenItem(),
-      (<DropdownListItem
-        key="list-item-settings"
-        icon="settings"
-        label={intl.formatMessage(intlMessages.settingsLabel)}
-        description={intl.formatMessage(intlMessages.settingsDesc)}
-        onClick={() => mountModal(<SettingsMenuContainer />)}
-      />),
-      (<DropdownListItem
-        key="list-item-about"
-        icon="about"
-        label={intl.formatMessage(intlMessages.aboutLabel)}
-        description={intl.formatMessage(intlMessages.aboutDesc)}
-        onClick={() => mountModal(<AboutContainer />)}
-      />),
-      !helpButton ? null
-        : (
-          <DropdownListItem
-            key="list-item-help"
-            icon="help"
-            iconRight="popout_window"
-            label={intl.formatMessage(intlMessages.helpLabel)}
-            description={intl.formatMessage(intlMessages.helpDesc)}
-            onClick={() => window.open(`${helpLink}`)}
-          />
-        ),
-      (<DropdownListItem
-        key="list-item-shortcuts"
-        icon="shortcuts"
-        label={intl.formatMessage(intlMessages.hotkeysLabel)}
-        description={intl.formatMessage(intlMessages.hotkeysDesc)}
-        onClick={() => mountModal(<ShortcutHelpComponent />)}
-      />),
+      // (<DropdownListItem
+      //   key="list-item-settings"
+      //   icon="settings"
+      //   label={intl.formatMessage(intlMessages.settingsLabel)}
+      //   description={intl.formatMessage(intlMessages.settingsDesc)}
+      //   onClick={() => mountModal(<SettingsMenuContainer />)}
+      // />),
+      // (<DropdownListItem
+      //   key="list-item-about"
+      //   icon="about"
+      //   label={intl.formatMessage(intlMessages.aboutLabel)}
+      //   description={intl.formatMessage(intlMessages.aboutDesc)}
+      //   onClick={() => mountModal(<AboutContainer />)}
+      // />),
+      // !helpButton ? null
+      //   : (
+      //     <DropdownListItem
+      //       key="list-item-help"
+      //       icon="help"
+      //       iconRight="popout_window"
+      //       label={intl.formatMessage(intlMessages.helpLabel)}
+      //       description={intl.formatMessage(intlMessages.helpDesc)}
+      //       onClick={() => window.open(`${helpLink}`)}
+      //     />
+      //   ),
+      // (<DropdownListItem
+      //   key="list-item-shortcuts"
+      //   icon="shortcuts"
+      //   label={intl.formatMessage(intlMessages.hotkeysLabel)}
+      //   description={intl.formatMessage(intlMessages.hotkeysDesc)}
+      //   onClick={() => mountModal(<ShortcutHelpComponent />)}
+      // />),
       (isMeteorConnected ? <DropdownListSeparator key={_.uniqueId('list-separator-')} /> : null),
       allowedToEndMeeting && isMeteorConnected
         ? (<DropdownListItem
