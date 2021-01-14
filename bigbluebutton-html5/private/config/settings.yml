@@ -4,15 +4,15 @@ public:
     desktopFontSize: 14px
     audioChatNotification: false
     autoJoin: true
-    listenOnlyMode: true
+    listenOnlyMode: false
     forceListenOnly: false
     skipCheck: false
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: Strideahead
+    appName: Strideahead
     bbbServerVersion: 2.2
-    copyright: "©2020 BigBlueButton Inc."
-    html5ClientBuild: HTML5_CLIENT_VERSION
-    helpLink: https://bigbluebutton.org/html5/
+    copyright: "©2021 Strideahead"
+    html5ClientBuild: 1.1
+    helpLink: https://strideahead.in
     lockOnJoin: true
     cdn: ""
     basename: "/html5client"
@@ -94,7 +94,7 @@ public:
     enableNetworkMonitoring: false
     packetLostThreshold: 10
   kurento:
-    wsUrl: HOST
+    wsUrl: wss://video.strideahead.in/bbb-webrtc-sfu
     # Valid for video-provider. Time (ms) before its WS connection times out
     # and tries to reconnect.
     wsConnectionTimeout: 4000
@@ -233,7 +233,7 @@ public:
     enabled: true
     max_custom: 5
   captions:
-    enabled: true
+    enabled: false
     enableDictation: false
     backgroundColor: "#000000"
     fontColor: "#FFFFFF"
@@ -264,7 +264,7 @@ public:
     typingIndicator:
       enabled: true
   note:
-    enabled: false
+    enabled: true
     url: ETHERPAD_HOST
     config:
       showLineNumbers: false

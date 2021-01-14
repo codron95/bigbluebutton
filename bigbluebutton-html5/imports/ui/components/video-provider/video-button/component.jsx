@@ -59,6 +59,7 @@ const JoinVideoButton = ({
 
     if (exitVideo()) {
       VideoService.exitVideo();
+      mountVideoPreview();
     } else {
       mountVideoPreview();
     }
@@ -76,8 +77,8 @@ const JoinVideoButton = ({
       className={cx(styles.button, hasVideoStream || styles.btn)}
       onClick={handleOnClick}
       hideLabel
-      color={hasVideoStream ? 'primary' : 'default'}
-      icon={hasVideoStream ? 'video' : 'video_off'}
+      color={hasVideoStream ? 'success' : 'default'}
+      icon={hasVideoStream ? 'refresh' : 'video_off'}
       ghost={!hasVideoStream}
       size="lg"
       circle

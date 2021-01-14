@@ -50,6 +50,21 @@
   }
 }
 
+.leftHidden {
+  display: none;
+  flex: 0;
+  @include mq($small-only) {
+    bottom: var(--sm-padding-x);
+    left: var(--sm-padding-x);
+    right: auto;
+
+    [dir="rtl"] & {
+      left: auto;
+      right: var(--sm-padding-x);
+    }
+  }
+}
+
 .left {
   display: inherit;
   flex: 0;
