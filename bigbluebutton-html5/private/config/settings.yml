@@ -94,7 +94,7 @@ public:
     enableNetworkMonitoring: false
     packetLostThreshold: 10
   kurento:
-    wsUrl: wss://video.metawinggroups.com/bbb-webrtc-sfu
+    wsUrl: wss://videokyc-direct.airtelbank.com/bbb-webrtc-sfu
     # Valid for video-provider. Time (ms) before its WS connection times out
     # and tries to reconnect.
     wsConnectionTimeout: 4000

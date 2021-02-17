@@ -561,6 +561,7 @@ class AudioModal extends Component {
           onRequestClose={closeModal}
           hideBorder
           contentLabel={intl.formatMessage(intlMessages.ariaModalTitle)}
+          shouldShowCloseButton={false}
         >
           {isIEOrEdge ? (
             <p className={cx(styles.text, styles.browserWarning)}>
